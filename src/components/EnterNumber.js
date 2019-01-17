@@ -29,7 +29,7 @@ class EnterNumber extends Component {
 
         return(
             <div>
-                EnterNumber state{JSON.stringify(this.state)}
+                EnterNumber State{JSON.stringify(this.state)}
                 <button onClick={this.handleUpClick}>Up</button>
                 <input onChange={this.handleChange} type="text" />
                 <button onClick={this.handleDownClick}>Down</button>

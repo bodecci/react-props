@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import EnterNumber from './components/EnterNumber'
+import CurrentTotal from './components/CurrentTotal';
 
 class App extends Component {
 
@@ -27,6 +28,8 @@ class App extends Component {
         </header>
         App State: {JSON.stringify(this.state)}
         <EnterNumber updateTotal={this.updateTotal} />
+        <hr></hr>
+        <CurrentTotal currentTotal={this.state.total}/>
       </div>
     );
   }
